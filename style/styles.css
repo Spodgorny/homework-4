@@ -10,6 +10,7 @@
     --logo-main-color: #000;
     --body-bg-color: #f5f5f5;
     --email-color: rgba(255, 255, 255, 0.6);
+    --border-company: #AFB1B8;
 }
 
 
@@ -398,6 +399,7 @@ ul, ol {
     margin-bottom: 30px;
 }
 
+
 .insta::before {
     display: block;
     content: '';
@@ -409,6 +411,7 @@ ul, ol {
     background-repeat: no-repeat;
     margin-right: 22px;
 }
+
 
 .twitter::before {
     display: block;
@@ -450,6 +453,7 @@ ul, ol {
     margin-right: 10px;
 }
 
+
 .section-client {
     margin-top: 94px;
     margin-bottom: 94px;
@@ -465,22 +469,16 @@ ul, ol {
     margin-bottom: 50px;
 }
 
-.box-flex {
+
+.company {
     display: flex;
-    height: 92px;
-    width: calc(100%/6);
+    justify-content: space-between;
 }
 
-.box {
-    display: block;
-    content: '';
-    background-image: url(../img/client/client1.svg);
-    width: 106px;
-    height: 60px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 30px;
+.img-company {
+    border: 1px solid var(--border-company);
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .footer {
