@@ -129,6 +129,18 @@ ul, ol {
     margin-right: 50px;
 }
 
+.email::before {
+    display: inline-block;
+    content: '';
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url(../img/mail.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .email:hover {
     color: var(--accent-color);
 }
@@ -145,6 +157,18 @@ ul, ol {
     padding-top: 32px;
     padding-bottom: 32px;
     letter-spacing: 0.02em;
+}
+
+.tel::before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url(../img/smartphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tel:hover {
