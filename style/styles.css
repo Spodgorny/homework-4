@@ -150,7 +150,7 @@ ul, ol {
 }
 
 .tel {
-    display: block;
+    display: inline-flex;
     font-weight: 500;
     font-size: 14px;
     color: var(--secondary-text-color);
@@ -162,14 +162,15 @@ ul, ol {
 .tel::before {
     display: inline-block;
     content: '';
-    height: 10px;
-    width: 16px;
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
     background-image: url(../img/smartphone.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .tel:hover {
     color: var(--accent-color);
@@ -231,6 +232,7 @@ ul, ol {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 
 .section-nazv {
     padding-top: 0;
@@ -300,9 +302,14 @@ ul, ol {
 
 .hero {
     text-align: center;
-    background: var(--bg-section);
+    background-image: url(../img/bg-img.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section-two {
@@ -319,6 +326,33 @@ ul, ol {
 
 .bussines-li {
     margin-right: 30px;
+}
+
+.bussines-li::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--button-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.antena-svg::before {
+    background-image: url(../img/antenna.svg);
+}
+
+.clock-svg::before {
+    background-image: url(../img/clock.svg);
+}
+
+.comp-svg::before {
+    background-image: url(../img/comp.svg);
+}
+
+.astronaut-svg::before {
+    background-image: url(../img/astronaut.svg);
 }
 
 .bussines .bussines-li:last-child {
@@ -356,6 +390,39 @@ ul, ol {
     font-size: 16px;
     color: var(--secondary-text-color);
     line-height: 1.18;
+}
+
+.section-client {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.client-title {
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.box-flex {
+    display: flex;
+    height: 92px;
+    width: calc(100%/6);
+}
+
+.box {
+    display: block;
+    content: '';
+    background-image: url(../img/client/client1.svg);
+    width: 106px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 30px;
 }
 
 .footer {
