@@ -392,6 +392,17 @@ ul, ol {
     line-height: 1.18;
 }
 
+.insta::before {
+    display: block;
+    content: '';
+    background-image: url(../img/insta.svg);
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .section-client {
     margin-top: 94px;
     margin-bottom: 94px;
