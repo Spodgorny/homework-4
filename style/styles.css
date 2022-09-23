@@ -104,6 +104,14 @@ ul, ol {
 }
 
 
+/* .insta:hover {
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    color: var(--container-bg-color);
+} */
 
 .weblogo {
     font-family: 'Raleway', sans-serif;
@@ -548,6 +556,32 @@ ul, ol {
     color: var(--color-btn-hover);
 }
 
+.soc-link-footer_title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--container-bg-color);
+    line-height: 1.14;
+    padding-bottom: 20px;
+}
+
+.col {
+    padding-right: 70px;
+}
+
+.footer_wrap {
+    display: flex;
+    align-items: baseline;
+}
+
+.soc-link-footer_list {
+    display: flex;
+}
+
+.soc-link-footer-img {
+    padding-right: 10px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -607,6 +641,10 @@ ul, ol {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.cards-img-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
