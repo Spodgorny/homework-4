@@ -28,10 +28,21 @@
                     </ul>           
                 </nav>
                 <ul class="contacts">
-                    <li>
-                        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="flex-mail">
+                        <a href="mailto:info@devstudio.com" class="email-svg">
+                            <svg class="mail-link-svg">
+                                <use href="./img/sprite.svg#icon-mail"></use>
+                            </svg>
+                            <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </a>
+
                     </li>
-                    <li>
+                    <li class="flex-tel">
+                        <a href="tel:+380961111111" class="tel-svg">
+                            <svg class="tel-link-svg">
+                                <use href="./img/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        </a>
                         <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -47,22 +58,42 @@
             <div class="container">
                 <h2 class="visually-hidden">Особливості WebStudio</h2>
                 <ul class=" bussines">
-                 <li class="bussines-li antena-svg">
-                    <h3 class="important">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="import-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції</p>
-                 </li>
-                 <li class="bussines-li clock-svg">
-                    <h3 class="important">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="import-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                 </li>
-                 <li class="bussines-li comp-svg">
-                    <h3 class="important">ПЛАНУВАННЯ</h3>
-                    <p class="import-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                 </li>
-                 <li class="bussines-li astronaut-svg">
-                    <h3 class="important">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="import-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                 </li>
+                    <li class="bussines-li">
+                        <a href="#" class="bussines-link">
+                            <svg class="antena-svg">
+                                <use href="./img/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </a>
+                        <h3 class="important">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="import-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції</p>
+                    </li>
+                    <li class="bussines-li">
+                        <a href="#" class="bussines-link">
+                            <svg class="clock-svg">
+                                <use href="./img/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </a>
+                        <h3 class="important">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="import-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li class="bussines-li">
+                        <a href="#" class="bussines-link">
+                            <svg class="comp-svg">
+                                <use href="./img/sprite.svg#icon-comp"></use>
+                            </svg>
+                        </a>
+                        <h3 class="important">ПЛАНУВАННЯ</h3>
+                        <p class="import-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li class="bussines-li">
+                        <a href="#" class="bussines-link">
+                            <svg class="stronaut-svg">
+                                <use href="./img/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </a>
+                        <h3 class="important">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="import-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
                 </ul>
             </div>
             </section>
@@ -93,10 +124,26 @@
                         <p class="work">Product Designer</p>
                     </div>
                     <div class="soc-link">
-                        <a href="https://www.instagram.com/" class="insta soc-link-margin" target="blank"></a>
-                        <a href="https://twitter.com/?lang=uk" class="twitter soc-link-margin" target="blank"></a>
-                        <a href="https://uk-ua.facebook.com/" class="facebook soc-link-margin" target="blank"></a>
-                        <a href="https://ua.linkedin.com/" class="in soc-link-margin" target="blank"></a>
+                        <a href="https://www.instagram.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/?lang=uk" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://uk-ua.facebook.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://ua.linkedin.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </div>
                 </li>
                 <li class="bg-licolor">
@@ -106,10 +153,26 @@
                         <p class="work">Frontend Developer</p>
                     </div>
                     <div class="soc-link">
-                        <a href="https://www.instagram.com/" class="insta soc-link-margin" target="blank"></a>
-                        <a href="https://twitter.com/?lang=uk" class="twitter soc-link-margin" target="blank"></a>
-                        <a href="https://uk-ua.facebook.com/" class="facebook soc-link-margin" target="blank"></a>
-                        <a href="https://ua.linkedin.com/" class="in soc-link-margin" target="blank"></a>
+                        <a href="https://www.instagram.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/?lang=uk" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://uk-ua.facebook.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://ua.linkedin.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </div>
                 </li>
                 <li class="bg-licolor">
@@ -119,10 +182,26 @@
                         <p class="work">Marketing</p>
                     </div>
                     <div class="soc-link">
-                        <a href="https://www.instagram.com/" class="insta soc-link-margin" target="blank"></a>
-                        <a href="https://twitter.com/?lang=uk" class="twitter soc-link-margin" target="blank"></a>
-                        <a href="https://uk-ua.facebook.com/" class="facebook soc-link-margin" target="blank"></a>
-                        <a href="https://ua.linkedin.com/" class="in soc-link-margin" target="blank"></a>
+                        <a href="https://www.instagram.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/?lang=uk" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://uk-ua.facebook.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://ua.linkedin.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </div>
                 </li>
                 <li class="bg-licolor">
@@ -132,10 +211,26 @@
                         <p class="work">UI Designer</p>
                     </div>
                     <div class="soc-link">
-                        <a href="https://www.instagram.com/" class="insta soc-link-margin" target="blank"></a>
-                        <a href="https://twitter.com/?lang=uk" class="twitter soc-link-margin" target="blank"></a>
-                        <a href="https://uk-ua.facebook.com/" class="facebook soc-link-margin" target="blank"></a>
-                        <a href="https://ua.linkedin.com/" class="in soc-link-margin" target="blank"></a>
+                        <a href="https://www.instagram.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/?lang=uk" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://uk-ua.facebook.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://ua.linkedin.com/" class="soc-link-a" target="blank">
+                            <svg class="soc-link-svg">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -192,22 +287,30 @@
                             <ul class="soc-link-footer_list">
                                 <li>
                                     <a class="soc-link-footer-img" href="https://www.instagram.com/" target="blank">
-                                        <img src="./img/ellipse.svg" alt="insta">
+                                        <svg class="soc-link-svg">
+                                            <use></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="soc-link-footer-img" href="https://twitter.com/?lang=uk" target="blank">
-                                        <img src="./img/ellipse2.svg" alt="twitter">
+                                        <svg class="soc-link-svg">
+                                            <use></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="soc-link-footer-img" href="https://uk-ua.facebook.com/" target="blank">
-                                        <img src="./img/ellipse3.svg" alt="facebook">
+                                        <svg class="soc-link-svg">
+                                            <use></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="soc-link-footer-img" href="https://ua.linkedin.com/" target="_blank">
-                                        <img src="./img/ellipse4.svg" alt="linkedin">
+                                        <svg class="soc-link-svg">
+                                            <use></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
