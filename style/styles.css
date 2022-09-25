@@ -404,7 +404,18 @@ ul, ol {
 }
 
 .soc-link-a {
-    margin-right: 34px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .soc-link-svg {
@@ -413,6 +424,10 @@ ul, ol {
     margin-bottom: 42px;
 }
 
+.soc-link-svg:hover {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
 
 
 .soc-link-a:last-child {
@@ -532,11 +547,6 @@ ul, ol {
     align-items: baseline;
 }
 
-.soc-link a:hover {
-    border-radius: 50px;
-    color: #188CE8;
-    background-color: #188CE8;
-}
 
 .soc-link-footer_list {
     display: flex;
