@@ -403,37 +403,47 @@ ul, ol {
     line-height: 1.18;
 }
 
+.soc-link {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.soc-link-list:not(:first-child) {
+    margin-left: 10px;
+}
+
 .soc-link-a {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.soc-link-list {
+    margin-left: 32px;
 }
 
-.soc-link-svg {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 42px;
-}
-
-.soc-link-svg:hover {
+.soc-link-a:hover {
     border-radius: 50%;
     background-color: var(--accent-color);
 }
 
+/* .soc-link-a:focus svg {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: #fff;
+    width: 44px;
+    height: 44px;
+} */
 
-.soc-link-a:last-child {
-    margin-right: 0;
+.soc-link-svg {
+    fill: var(--border-company);
 }
 
+.soc-link-a:hover svg {
+    fill: var(--container-bg-color);
+}
 
 .section-client {
     margin-top: 94px;
