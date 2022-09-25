@@ -429,17 +429,25 @@ ul, ol {
     background-color: var(--accent-color);
 }
 
-/* .soc-link-a:focus svg {
+
+.soc-link-a:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
     fill: #fff;
     width: 44px;
     height: 44px;
-} */
+}
 
 .soc-link-svg {
     fill: var(--border-company);
 }
+
+.soc-link-svg:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: var(--container-bg-color);
+}
+
 
 .soc-link-a:hover svg {
     fill: var(--container-bg-color);
@@ -463,14 +471,27 @@ ul, ol {
 
 .company {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.img-company {
-    border: 1px solid var(--border-company);
-    border-radius: 4px;
-    padding: 16px 32px;
+.company-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.company-link {
+    width: 170px;
+    height: 92px;
+}
+
+
+.company-use {
+    width: 41px;
+    height: 47px;
+}
+
 
 .footer {
     padding-top: 60px;
