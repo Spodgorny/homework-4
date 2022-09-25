@@ -122,6 +122,14 @@ ul, ol {
     align-items: center;
 }
 
+.flex-mail:hover a {
+    fill: var(--accent-color);
+}
+
+.flex-mail:focus a {
+    fill: var(--accent-color);
+}
+
 .email {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -135,13 +143,23 @@ ul, ol {
 }
 
 .email-svg {
-    padding: 0;
+    display: block;
+    fill: var(--secondary-text-color);
 }
 
-.mail-link-svg:hover,
-.mail-link-svg:focus {
+
+.email-svg:hover {
     fill: var(--accent-color);
 }
+
+.email-svg:focus svg {
+    fill: var(--accent-color);
+}
+
+.email-svg:focus .email {
+    fill: var(--accent-color);
+}
+
 
 .mail-link-svg {
     width: 16px;
@@ -173,10 +191,31 @@ ul, ol {
     align-items: center;
 }
 
+.flex-tel:hover a {
+    fill: var(--accent-color);
+}
+
+.flex-tel:focus a {
+    fill: var(--accent-color);
+}
+
 .tel-link-svg {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+}
+
+.tel-svg {
+    display: block;
+    fill: var(--secondary-text-color);
+}
+
+.tel-svg:hover {
+    fill: var(--accent-color);
+}
+
+.tel-svg:focus svg {
+    fill: var(--accent-color);
 }
 
 .tel-link-svg:hover {
@@ -426,12 +465,12 @@ ul, ol {
 
 .soc-link-a:hover {
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background: var(--accent-color);
 }
 
 
 .soc-link-a:focus {
-    background-color: var(--accent-color);
+    background: var(--accent-color);
     border-radius: 50%;
     fill: #fff;
     width: 44px;
@@ -471,27 +510,27 @@ ul, ol {
 
 .company {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .company-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-company);
+    border-radius: 4px;
 }
 
 .company-link {
-    width: 170px;
-    height: 92px;
+    display: block;
+    width: 106px;
+    height: 60px;
 }
 
+.company-list svg {
+    align-items: center;
 
-.company-use {
-    width: 41px;
-    height: 47px;
 }
-
 
 .footer {
     padding-top: 60px;
@@ -584,7 +623,29 @@ ul, ol {
 }
 
 .soc-link-footer-img {
-    padding-right: 10px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.soc-link-footer-img:hover {
+    background: var(--accent-color);
+}
+
+.soc-link-footer-img:focus {
+    background: var(--accent-color);
+}
+
+.soc-link-footer {
+    fill: var(--container-bg-color);
+}
+
+.soc-link-footer-li:not(:first-child) {
+    margin-left: 10px;
 }
 
 .visually-hidden {
