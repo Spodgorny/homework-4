@@ -424,7 +424,7 @@ ul, ol {
 .soc-link-a:focus {
     background: var(--accent-color);
     border-radius: 50%;
-    fill: #fff;
+    color: currentColor;
     width: 44px;
     height: 44px;
 }
@@ -433,16 +433,17 @@ ul, ol {
     fill: var(--border-company);
 }
 
-.soc-link-svg:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    fill: var(--container-bg-color);
-}
 
 
 .soc-link-a:hover svg {
     fill: var(--container-bg-color);
 }
+
+.soc-link-a:focus svg {
+    fill: #fff;
+    border: none;
+}
+
 
 .section-client {
     margin-top: 94px;
