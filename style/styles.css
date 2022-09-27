@@ -99,10 +99,6 @@ ul, ol {
 .nav-item:focus {
     color: var(--accent-color);
 }
-.contacts {
-    display: flex;
-    margin-left: auto;
-}
 
 
 .weblogo {
@@ -118,6 +114,39 @@ ul, ol {
     color: var(--accent-color);
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+}
+
+
+.link-svg-mail {
+    fill: var(--secondary-text-color);
+}
+
+.link-svg-tel {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: var(--secondary-text-color);
+}
+
+.link-svg-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.email-svg {
+    margin-right: 30px;
+}
+
+
 .email-svg,
 .tel-svg {
     font-weight: 500;
@@ -128,44 +157,6 @@ ul, ol {
     padding-top: 32px;
 }
 
-.header-icon {
-    width: 16px;
-    height: 12px;
-}
-
-/* .email-svg {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
-
-.contacts-link .link-svg-mail {
-    width: 16px;
-    height: 12px;
-}
-
-.tel-svg .link-svg-tel {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 10px;
-    height: 16px;
-}
-
-/* .tel-svg {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
-
-
-.contacts-link {
-    display: flex;
-    align-items: center;
-}
 
 .email-svg:hover,
 .email-svg:focus,
@@ -174,15 +165,6 @@ ul, ol {
   color: var(--accent-color);
 }
 
-.link-svg:hover .link-svg,
-.link-svg:focus .link-svg {
-  fill: var(--accent-color);
-}
-
-.link-svg {
-    margin-right: 10px;
-    fill: currentColor;
-}
 
 .title {
     text-transform: uppercase;
@@ -426,6 +408,7 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--border-company);
 }
 
 
@@ -441,23 +424,23 @@ ul, ol {
 }
 
 .soc-link-svg {
-    fill: var(--border-company);
+    fill: currentColor;
 }
 
 
 
 .soc-link-a:hover svg {
-    fill: var(--container-bg-color);
+    color: var(--container-bg-color);
 }
 
 .soc-link-a:focus svg {
-    fill: #fff;
+    color: var(--container-bg-color);
 }
 
 
 .section-client {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .client-title {
@@ -481,6 +464,7 @@ ul, ol {
     width: 170px;
     height: 92px;
 }
+
 
 .company-link {
     display: flex;
@@ -579,6 +563,7 @@ ul, ol {
     color: var(--container-bg-color);
     line-height: 1.14;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .col {
