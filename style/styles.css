@@ -11,6 +11,7 @@
     --body-bg-color: #f5f5f5;
     --email-color: rgba(255, 255, 255, 0.6);
     --border-company: #AFB1B8;
+    --background-hero: #C4C4C4;
 }
 
 
@@ -117,12 +118,6 @@ ul, ol {
     color: var(--accent-color);
 }
 
-.flex-mail {
-    display: flex;
-    align-items: center;
-}
-
-
 .email-svg,
 .tel-svg {
     font-weight: 500;
@@ -130,23 +125,44 @@ ul, ol {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-top: 32px;
 }
 
-.email-svg {
+.header-icon {
+    width: 16px;
+    height: 12px;
+}
+
+/* .email-svg {
     margin-right: 50px;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */
+
+.contacts-link .link-svg-mail {
+    width: 16px;
+    height: 12px;
 }
 
-.tel-svg {
+.tel-svg .link-svg-tel {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+}
+
+/* .tel-svg {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */
 
 
-.flex-tel {
+.contacts-link {
     display: flex;
     align-items: center;
 }
@@ -285,27 +301,27 @@ ul, ol {
     padding: 10px 32px;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .btn:hover {
     background: var(--color-btn-hover);
-    cursor: pointer;
 }
 
 .btn:focus {
-    color: var(--bg-section);
+    background: var(--color-btn-hover);
 }
 
 .hero {
     text-align: center;
-    background-image: url(../img/bg-img.jpg);
+    background: var(--background-hero);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-img.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -322,18 +338,20 @@ ul, ol {
     display: flex;
 }
 
-.bussines-li {
+.bussines-li:not(:last-child) {
     margin-right: 30px;
 }
 
+
 .bussines-link {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     background-color: var(--button-bg-color);
     padding: 25px 102px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 
 .antena-svg {
@@ -388,16 +406,15 @@ ul, ol {
     font-size: 16px;
     color: var(--secondary-text-color);
     line-height: 1.18;
+    margin-bottom: 16px;
 }
 
 .soc-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.soc-link_wrap {
-    padding-top: 0;
-    padding-bottom: 30px;
-}
 
 .soc-link-list:not(:first-child) {
     margin-left: 10px;
@@ -411,9 +428,6 @@ ul, ol {
     justify-content: center;
 }
 
-.soc-link-list {
-    margin-left: 32px;
-}
 
 .soc-link-a:hover {
     border-radius: 50%;
@@ -424,9 +438,6 @@ ul, ol {
 .soc-link-a:focus {
     background: var(--accent-color);
     border-radius: 50%;
-    color: currentColor;
-    width: 44px;
-    height: 44px;
 }
 
 .soc-link-svg {
@@ -441,7 +452,6 @@ ul, ol {
 
 .soc-link-a:focus svg {
     fill: #fff;
-    border: none;
 }
 
 
