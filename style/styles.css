@@ -122,24 +122,23 @@ ul, ol {
 .contacts-link {
     display: flex;
     align-items: center;
-}
-
-
-.link-svg-mail {
-    fill: var(--secondary-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .link-svg-tel {
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    fill: var(--secondary-text-color);
+    fill: currentColor;
 }
+
 
 .link-svg-mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .email-svg {
@@ -157,11 +156,17 @@ ul, ol {
     padding-top: 32px;
 }
 
+.contacts-link:hover,
+.company-link:focus {
+    color: var(--accent-color);
+}
 
-.email-svg:hover,
-.email-svg:focus,
+
 .tel-svg:hover,
-.tel-svg:focus {
+.email-svg:hover,
+.tel-svg:focus,
+.email-svg:focus {
+  fill: currentColor;
   color: var(--accent-color);
 }
 
@@ -480,7 +485,6 @@ ul, ol {
 
 .company-link svg {
     fill: currentColor;
-    padding: 16px 32px;
 }
 
 .company-link:hover,
