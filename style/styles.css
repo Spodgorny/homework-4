@@ -276,7 +276,6 @@ ul, ol {
 }
 
 .btn {
-    display: inline-block;
     font-family: inherit;
     color: var(--container-bg-color);
     background: var(--accent-color);
@@ -337,7 +336,6 @@ ul, ol {
     width: 270px;
     height: 120px;
     background-color: var(--button-bg-color);
-    padding: 25px 102px;
     margin-bottom: 30px;
 }
 
@@ -411,6 +409,7 @@ ul, ol {
     width: 44px;
     height: 44px;
     display: flex;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     color: var(--border-company);
@@ -418,14 +417,12 @@ ul, ol {
 
 
 .soc-link-a:hover {
-    border-radius: 50%;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 
 .soc-link-a:focus {
-    background: var(--accent-color);
-    border-radius: 50%;
+    background-color: var(--accent-color);
 }
 
 .soc-link-svg {
@@ -571,7 +568,11 @@ ul, ol {
 }
 
 .col {
-    padding-right: 70px;
+    margin-right: 70px;
+}
+
+.col:last-child {
+    margin-right: 0;
 }
 
 .footer_wrap {
